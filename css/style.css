@@ -90,12 +90,11 @@ div#archive {
 }
 
 /* 为 <a> 标签添加默认样式和过渡效果 */
-.menus_item_child li a {
+/* .menus_item_child li a {
     display: inline-block;
-    color: #333; /* 默认文字颜色 */
-    font-size: 24px; /* 默认字体大小 */
-    transition: all 0.2s ease; /* 对所有属性变化应用过渡 */
-} */
+    color: #333; 
+    font-size: 24px; 
+}   */
 
 
 /* 导航栏菜单鼠标移入字体放大 */
