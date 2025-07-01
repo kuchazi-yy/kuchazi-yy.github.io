@@ -53,7 +53,8 @@ div#archive {
 
 /* 夜间模式页脚页头遮罩透明 */
 [data-theme="dark"] #footer::before {
-  background: transparent !important;
+/* background: transparent !important; */
+  background-color: #FF0000 !important;
 }
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
