@@ -73,13 +73,15 @@ div#archive {
     transition: all 0.3s ease;
 }
 
-.menus_item_child li a i.fa-images + span:hover {
+.menus_item_child li a:hover i.fa-images,
+.menus_item_child li a:hover span {
     color: #7600ab;
     transition: all 0.3s ease;
     font-size:30px;
 }
 
-.menus_item_child li a i.fa-video + span:hover {
+.menus_item_child li a:hover i.fa-video,
+.menus_item_child li a:hover span {
     color: #7600ab;
     transition: all 0.3s ease;
     font-size:30px;
