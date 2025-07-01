@@ -68,7 +68,7 @@ div#archive {
 
 
 
-.menus_item_child li a:hover i.fa-music,
+/* .menus_item_child li a:hover i.fa-music,
 .menus_item_child li a:hover span {
     color: #7600ab;
     font-size: 26px;
@@ -95,7 +95,7 @@ div#archive {
     color: #333; /* 默认文字颜色 */
     font-size: 24px; /* 默认字体大小 */
     transition: all 0.2s ease; /* 对所有属性变化应用过渡 */
-}
+} */
 
 
 /* 导航栏菜单鼠标移入字体放大 */
