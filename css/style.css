@@ -66,10 +66,22 @@ div#archive {
 
 
 
-.menus_item_child li a i.fa-music + a:hover {
+.menus_item_child li a i.fa-music + span:hover {
     color: #7600ab;
     transition: all 0.3s ease;
-    font-size:38px;
+    font-size:30px;
+}
+
+.menus_item_child li a i.fa-images + span:hover {
+    color: #7600ab;
+    transition: all 0.3s ease;
+    font-size:30px;
+}
+
+.menus_item_child li a i.fa-video + span:hover {
+    color: #7600ab;
+    transition: all 0.3s ease;
+    font-size:30px;
 }
 
 /* 导航栏菜单鼠标移入字体放大 */
