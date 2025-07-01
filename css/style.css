@@ -35,6 +35,7 @@ div#archive {
 #page-header.nav-fixed #nav {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: var(--backdrop-filter);
+  font-size: 24px;
 }
 
 [data-theme="dark"] #page-header.nav-fixed #nav {
@@ -62,6 +63,7 @@ div#archive {
 /* 去除导航栏选项中底下的蓝条 */
 #nav *::after{
     background-color: transparent!important;
+    font-size: 24px;
 }
 
 
@@ -85,6 +87,14 @@ div#archive {
     color: #7600ab;
     transition: all 0.3s ease;
     font-size:28px;
+}
+
+/* 为 <a> 标签添加默认样式和过渡效果 */
+.menus_item_child li a {
+    display: inline-block;
+    color: #333; /* 默认文字颜色 */
+    font-size: 24px; /* 默认字体大小 */
+    transition: all 0.3s ease; /* 对所有属性变化应用过渡 */
 }
 
 
