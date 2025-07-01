@@ -103,6 +103,7 @@ div#archive {
 #nav .menus_item:hover, 
 #nav #search-button:hover{
     font-size:28px;
+    transition: all 0.3s ease
 }
 
 
