@@ -64,8 +64,8 @@ div#archive {
     background-color: transparent!important;
 }
 
-#nav-chil *::after{
-    background-color: transparent!important;
+#nav-chil #search-button:hover{
+    font-size:28px;
 }
 
 
