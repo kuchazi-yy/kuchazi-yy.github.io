@@ -64,13 +64,11 @@ div#archive {
     background-color: transparent!important;
 }
 
-/* 找到包含“音乐”的菜单项，hover时改变文字颜色等 */
-.menus_item_child li a.site-page.child:hover {
-    color: #7600ab; /*  hover 时文字变成你想要的颜色，比如之前的主题色 */
-    /* 还可以添加其他样式，比如背景色、字体大小变化等 */
-    /* background-color: rgba(118, 0, 171, 0.1); */
-    /* font-size: 16px; */
-    transition: all 0.3s ease; /* 增加过渡效果，让变化更平滑 */
+
+
+.menus_item_child li a i.fa-music + span:hover {
+    color: #7600ab;
+    transition: all 0.3s ease;
     font-size:38px;
 }
 
