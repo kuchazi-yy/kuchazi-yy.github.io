@@ -36,3 +36,4 @@ function changeBg(s, flag) {
     } else bg.style.backgroundImage = s
     if (!flag) { saveData('blogbg', s) }
 }
+
