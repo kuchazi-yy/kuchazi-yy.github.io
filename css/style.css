@@ -71,7 +71,7 @@ div#archive {
 .menus_item_child li a:hover i.fa-music,
 .menus_item_child li a:hover span {
     color: #7600ab;
-    font-size: 28px;
+    font-size: 26px;
     transition: all 0.3s ease;
 }
 
@@ -79,14 +79,14 @@ div#archive {
 .menus_item_child li a:hover span {
     color: #7600ab;
     transition: all 0.3s ease;
-    font-size:28px;
+    font-size:26px;
 }
 
 .menus_item_child li a:hover i.fa-video,
 .menus_item_child li a:hover span {
     color: #7600ab;
     transition: all 0.3s ease;
-    font-size:28px;
+    font-size:26px;
 }
 
 /* 为 <a> 标签添加默认样式和过渡效果 */
@@ -94,7 +94,7 @@ div#archive {
     display: inline-block;
     color: #333; /* 默认文字颜色 */
     font-size: 24px; /* 默认字体大小 */
-    transition: all 0.3s ease; /* 对所有属性变化应用过渡 */
+    transition: all 0.2s ease; /* 对所有属性变化应用过渡 */
 }
 
 
