@@ -64,9 +64,15 @@ div#archive {
     background-color: transparent!important;
 }
 
-#nav-chil #search-button:hover{
-    font-size:28px;
+#nav-chil .nav-sub-item {
+  transition: font-size 0.3s; /* 动画过渡更丝滑 */
 }
+
+/* 子菜单 hover 时放大 */
+#nav-chil .nav-sub-item:hover {
+  font-size: 28px;
+}
+
 
 
 /* 导航栏菜单鼠标移入字体放大 */
