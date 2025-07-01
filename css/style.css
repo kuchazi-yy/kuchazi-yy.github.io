@@ -149,3 +149,7 @@ div#archive {
         top: 33px;
     }
 }
+
+#aside {
+    background-color: rgb(118, 0, 171);
+}
