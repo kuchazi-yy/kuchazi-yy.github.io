@@ -71,6 +71,7 @@ div#archive {
     /* background-color: rgba(118, 0, 171, 0.1); */
     /* font-size: 16px; */
     transition: all 0.3s ease; /* 增加过渡效果，让变化更平滑 */
+    font-size:38px;
 }
 
 /* 导航栏菜单鼠标移入字体放大 */
