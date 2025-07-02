@@ -36,4 +36,17 @@ function changeBg(s, flag) {
     } else bg.style.backgroundImage = s
     if (!flag) { saveData('blogbg', s) }
 }
-
+// 复制弹窗
+new Vue({
+    data: function () {
+        this.$notify({
+            title: "复制成功！",
+            message: "喜欢我的代码吗（*＾-＾*）",
+            position: 'top-left',
+            offset: 50,
+            showClose: true,
+            type: "warning",
+            duration: 5000
+        });
+    }
+})
