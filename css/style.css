@@ -67,7 +67,7 @@ span.site-page.group.hide i {
 /* 悬停 <li> 时，放大内部 <span> 文字 */
 #nav .menus_item_child li:hover a.site-page.child span {
   transform: scale(1.1) !important; 
-  transition: transform 0.1s ease; 
+  transition: transform 0.15s ease; 
   display: inline-block;
   /* 可以再加个垂直对齐的属性，避免影响布局，比如 */
   vertical-align: middle; 
@@ -79,7 +79,7 @@ span.site-page.group.hide i {
 
 .menus_item_child li:hover a.site-page.child i {
   transform: scale(1.1) !important; /* 放大 1.1 倍 */
-  transition: transform 0.1s ease; /* 平滑过渡 */
+  transition: transform 0.15s ease; /* 平滑过渡 */
   margin-right: 4px !important;
 }
 
@@ -202,51 +202,45 @@ span.site-page.group.hide i {
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: cover; /* 保持原有 cover 适配，覆盖重复的 background-size 声明 */
-    transition: all 0.3s ease; /* 添加过渡，让变化更平滑 */
+    transition: all 0.2s ease; /* 添加过渡，让变化更平滑 */
 }
 
 /* 鼠标悬停时的样式 */
 [data-theme="dark"] #aside-content > .card-widget.card-info:hover {
     transform: scale(1.03); /* 轻微放大，营造视觉上背景放大效果，数值可根据需求微调，1.02 表示放大 2% 左右，接近你说的“视觉上放大 8px”感受，若想更明显可加大，比如 1.1 等  */
-    backdrop-filter: blur(5px); /* 添加背景模糊效果，数值为模糊半径 */
     /* 若浏览器不支持 backdrop-filter，可尝试用 filter，但 filter 会影响卡片内容，需根据实际情况取舍 */
     /* filter: blur(18px);  */
 }
 
 
 .card-widget {
-    transition: all 0.3s ease; /* 添加过渡，让变化更平滑 */
+    transition: all 0.2s ease; /* 添加过渡，让变化更平滑 */
 }
 .card-widget:hover {
     transform: scale(1.03); /* 轻微放大，营造视觉上背景放大效果，数值可根据需求微调，1.02 表示放大 2% 左右，接近你说的“视觉上放大 8px”感受，若想更明显可加大，比如 1.1 等  */
-    backdrop-filter: blur(5px); /* 添加背景模糊效果，数值为模糊半径 */
     /* 若浏览器不支持 backdrop-filter，可尝试用 filter，但 filter 会影响卡片内容，需根据实际情况取舍 */
     /* filter: blur(18px);  */
 }
 
 .card-announcement {
-    transition: all 0.3s ease; /* 添加过渡，让变化更平滑 */
+    transition: all 0.2s ease; /* 添加过渡，让变化更平滑 */
 }
 .card-announcement:hover {
     transform: scale(1.03); /* 轻微放大，营造视觉上背景放大效果，数值可根据需求微调，1.02 表示放大 2% 左右，接近你说的“视觉上放大 8px”感受，若想更明显可加大，比如 1.1 等  */
-    backdrop-filter: blur(5px); /* 添加背景模糊效果，数值为模糊半径 */
-    /* 若浏览器不支持 backdrop-filter，可尝试用 filter，但 filter 会影响卡片内容，需根据实际情况取舍 */
-    /* filter: blur(18px);  */
+
 }
 
 .card-glass {
-    transition: all 0.3s ease; /* 添加过渡，让变化更平滑 */
+    transition: all 0.2s ease; /* 添加过渡，让变化更平滑 */
 }
 .card-glass:hover {
     transform: scale(1.03); /* 轻微放大，营造视觉上背景放大效果，数值可根据需求微调，1.02 表示放大 2% 左右，接近你说的“视觉上放大 8px”感受，若想更明显可加大，比如 1.1 等  */
-    backdrop-filter: blur(5px); /* 添加背景模糊效果，数值为模糊半径 */
-    /* 若浏览器不支持 backdrop-filter，可尝试用 filter，但 filter 会影响卡片内容，需根据实际情况取舍 */
-    /* filter: blur(18px);  */
+
 }
 
 
 .swiper-slide {
-    transition: all 0.3s ease; /* 添加过渡，让变化更平滑 */
+    transition: all 0.2s ease; /* 添加过渡，让变化更平滑 */
 }
 
 .swiper-slide:hover .blog-slider__img{
@@ -254,7 +248,7 @@ span.site-page.group.hide i {
 }
 
 .blog-slider__img {
-    transition: all 0.3s ease; /* 添加过渡，让变化更平滑 */
+    transition: all 0.2s ease; /* 添加过渡，让变化更平滑 */
 }
 .blog-slider__img:hover {
     transform: scale(1.03); /* 轻微放大，营造视觉上背景放大效果，数值可根据需求微调，1.02 表示放大 2% 左右，接近你说的“视觉上放大 8px”感受，若想更明显可加大，比如 1.1 等  */
@@ -516,7 +510,7 @@ span.site-page.group.hide i {
 
 .pace-inactive .pace-progress {
   opacity: 0;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .pace .pace-progress {
@@ -545,7 +539,7 @@ span.site-page.group.hide i {
 
 .pace.pace-inactive {
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
   top: -8px;
 }
 @keyframes gradient {
@@ -570,10 +564,10 @@ span.site-page.group.hide i {
 
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {
-  animation: huxi_light 4s ease-in-out infinite;
+  animation: huxi_light 3s ease-in-out infinite;
 }
 [data-theme="dark"] .avatar-img {
-  animation: huxi_dark 4s ease-in-out infinite;
+  animation: huxi_dark 3s ease-in-out infinite;
 }
 @keyframes huxi_light {
   0% {
@@ -612,7 +606,7 @@ span.site-page.group.hide i {
   border: 1px solid #d0d7de;
   border-radius: 2em;
   background-color: #f8f8f8f8;
-  transition: 0.4s;
+  transition: 0.35s;
   overflow: hidden;
 }
 
@@ -645,7 +639,7 @@ span.site-page.group.hide i {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: 0.4s;
+  transition: 0.35s;
 }
 
 .card-widget .card-info-avatar {
@@ -673,3 +667,29 @@ span.site-page.group.hide i {
 #post-info {
     transform: translateY(-40px);
 }
+
+
+
+
+figure.highlight pre,
+.code-block pre {
+  white-space: pre-wrap; /* 保留空格和换行，但允许文本换行 */
+  text-align: left !important;
+}
+
+#article-container > * {
+  white-space: pre-wrap; /* 保留空格和换行，但允许文本换行 */
+  text-align: left !important;
+}
+
+
+#blog-info {
+  display: flex;
+  align-items: center; /* 保持垂直居中（如果需要） */
+  justify-content: flex-start !important; 
+}
+
+#blog-info > * {
+  margin: 0 !important; /* 清除子元素的默认 margin */
+}
+
