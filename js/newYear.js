@@ -27,7 +27,7 @@ var newYear = () => {
             document.querySelector('#newYear .newYear-time').innerHTML = '<span class="happyNewYear">工作倒计时</p>';
         } else {
             // 大于0则还未过年
-            document.querySelector('#newYear .title').innerHTML = '距离毕业：'
+            document.querySelector('#newYear .title').innerHTML = '距离找工作：'
 
             // 大于一天则直接渲染天数
             if (second > 86400) {
