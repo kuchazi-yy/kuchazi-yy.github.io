@@ -652,3 +652,24 @@ span.site-page.group.hide i {
   display: inline-block;
   position: relative;
 }
+
+
+
+
+
+/* 调整.post-info 位置和.post-title 居中 */
+.post {
+  /* 开启相对定位，为子元素绝对定位做参考（如果用绝对定位调整的话） */
+  position: relative; 
+  /* 让内容水平居中，可根据实际情况决定是否需要 */
+  text-align: center; 
+}
+.post-title {
+  text-align: center; /* 确保标题自身文字水平居中 */
+  margin-bottom: 50px; /* 和下方.post-info 拉开点距离，可调整 */
+}
+
+
+#post-info {
+    transform: translateY(-40px);
+}
