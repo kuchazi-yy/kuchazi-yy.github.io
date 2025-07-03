@@ -663,9 +663,9 @@ span.site-page.group.hide i {
   margin-bottom: 50px; /* 和下方.post-info 拉开点距离，可调整 */
 }
 
-
+/* 文章页上的标题与波浪线距离 */
 #post-info {
-    transform: translateY(-40px);
+    transform: translateY(-50px);
 }
 
 
@@ -675,6 +675,7 @@ figure.highlight pre,
 .code-block pre {
   white-space: pre-wrap; /* 保留空格和换行，但允许文本换行 */
   text-align: left !important;
+  font-size: large;
 }
 
 #article-container > * {
@@ -692,4 +693,32 @@ figure.highlight pre,
 #blog-info > * {
   margin: 0 !important; /* 清除子元素的默认 margin */
 }
+
+
+
+
+
+
+
+
+
+/* 锁定文章页的侧边栏容器 */
+.post .aside-content {
+  /* 只保留 .sticky_layout，其他模块直接隐藏 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 隐藏所有非 .sticky_layout 的侧边栏模块 */
+.post .aside-content > *:not(.sticky_layout) {
+  display: none !important;
+}
+
+/* 确保 .sticky_layout 正常显示（可选，根据主题调整） */
+.post .sticky_layout {
+  width: 100% !important;
+  margin: 0 !important;
+  order: 1; /* 确保在最顶部 */
+}
+
 

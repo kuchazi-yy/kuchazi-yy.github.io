@@ -52,3 +52,11 @@ new Vue({
 })
 
 
+hexo.extend.filter.register('after_post_render', function(data) {
+  // 检查文章 Front-matter 是否设置了 only_toc
+  if (data.only_toc) {
+    // 移除除目录外的所有侧边栏内容
+    data.content = data.content.replace(/<div class="card-widget(?! toc-card).*?<\/div>/gs, '');
+  }
+  return data;
+});
