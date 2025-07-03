@@ -401,7 +401,7 @@ span.site-page.group.hide i {
     padding: 1rem;
     position: relative;
     border-radius: 6px;
-    background-image: url(/img/liangchaoweizhengmian.png);
+    background-image: url(/img/liangchaowei.png);
     background-size: cover;
     background-position: center;
 }
@@ -555,7 +555,7 @@ span.site-page.group.hide i {
 }
 
 .loading-img {
-  background: url(/img/liangchaoweizhengmian.png) no-repeat center center;
+  background: url(/img/liangchaowei.png) no-repeat center center;
   background-size: cover;
 }
 
