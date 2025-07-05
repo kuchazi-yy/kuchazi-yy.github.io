@@ -669,19 +669,63 @@ span.site-page.group.hide i {
 
 /* 文章页上的标题与波浪线距离 */
 #post-info {
-    transform: translateY(-50px);
+    transform: translateY(-80px);
 }
 
 
 
-/* 代码块样式调整 */
-/* 代码块的背景色、字体颜色、边框等 */
+/* 代码块样式调整（原有基础） */
 figure.highlight pre,
 .code-block pre {
   white-space: pre; /* 保留空格、换行，严格按照文本原有格式渲染 */
   text-align: left !important;
   font-size: large;
   overflow-x: auto; /* 启用横向滚动条 */
+}
+
+/* macOS 风格代码框主体 */
+figure.highlight,
+.code-block {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5rem 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #e5e7eb; /* 浅灰色边框，可根据喜好调整 */
+}
+
+/* macOS 标题栏（模拟） */
+figure.highlight::before,
+.code-block::before {
+  content: "";
+  display: block;
+  height: 28px;
+  background-color: #f7f7f7; /* 标题栏背景色，接近 macOS 浅灰 */
+  border-bottom: 1px solid #e0e0e0; /* 分隔线 */
+}
+
+/* macOS 红黄绿按钮（核心） */
+figure.highlight::after,
+.code-block::after {
+  content: " ";
+  position: absolute;
+  top: 8px; 
+  left: 10px; 
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 
+    20px 0 0 #fdbc40, /* 黄色按钮 */
+    40px 0 0 #35cd4b; /* 绿色按钮 */
+  background-color: #fc625d; /* 红色按钮 */
+}
+
+/* 调整代码区域位置，避免被标题栏遮挡 */
+figure.highlight pre,
+.code-block pre {
+  margin-top: 0;
+  padding: 12px; /* 增加内边距，让代码与边框有距离 */
+  padding-top: 20px; /* 给标题栏留出空间 */
 }
 
 
@@ -717,7 +761,7 @@ figure.highlight pre,
   /* 只保留 .sticky_layout，其他模块直接隐藏 */
   display: flex;
   flex-direction: column;
-  max-width: 320px !important;
+  max-width: 400px !important;
 }
 
 /* 隐藏所有非 .sticky_layout 的侧边栏模块 */
@@ -731,5 +775,31 @@ figure.highlight pre,
   margin: 0 !important;
   order: 1; /* 确保在最顶部 */
 }
+/* 针对目录容器，重置默认内边距 */
+#card-toc .toc {
+  padding-left: 0 !important; /* 强制左内边距为0，让内容左移 */
+}
 
+/* 目录项基础样式：保留层级缩进，调整左对齐 */
+#card-toc .toc-item {
+  text-align: left; 
+  padding-left: calc(10px * var(--toc-level)); /* 用 CSS 变量动态控制层级缩进 */
+  /* 或固定缩进（适合简单层级）：
+     padding-left: 10px; 
+     &.level-2 { padding-left: 20px; }
+     &.level-3 { padding-left: 30px; }
+  */
+}
+
+/* 如果主题使用 ul/li 结构，重置列表样式 */
+#card-toc ul {
+  list-style: none; /* 去掉默认列表符号 */
+  padding-left: 0;   /* 重置列表内边距 */
+  margin: 0;        /* 重置列表外边距 */
+}
+#card-toc .toc-item {
+  --base-indent: 10px; /* 基础缩进值 */
+  padding-left: calc(var(--base-indent) * var(--toc-level));
+  text-align: left;
+}
 
