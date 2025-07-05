@@ -674,27 +674,19 @@ span.site-page.group.hide i {
 
 
 
-
+/* 代码块样式调整 */
+/* 代码块的背景色、字体颜色、边框等 */
 figure.highlight pre,
 .code-block pre {
-  white-space: nowrap; /* 保留空格和换行，但允许文本换行 */
+  white-space: pre; /* 保留空格、换行，严格按照文本原有格式渲染 */
   text-align: left !important;
   font-size: large;
-  overflow-x: auto;       /* 启用横向滚动条 */
+  overflow-x: auto; /* 启用横向滚动条 */
 }
 
-figure.highlight::-webkit-scrollbar {
-  height: 6px;            /* 滚动条高度 */
-}
 
-figure.highlight::-webkit-scrollbar-track {
-  background: transparent; /* 轨道背景透明 */
-}
 
-figure.highlight::-webkit-scrollbar-thumb {
-  background: #909399;    /* 滚动条颜色 */
-  border-radius: 3px;     /* 圆角 */
-}
+
 
 #article-container > * {
   white-space: pre-wrap; /* 保留空格和换行，但允许文本换行 */
@@ -725,6 +717,7 @@ figure.highlight::-webkit-scrollbar-thumb {
   /* 只保留 .sticky_layout，其他模块直接隐藏 */
   display: flex;
   flex-direction: column;
+  max-width: 320px !important;
 }
 
 /* 隐藏所有非 .sticky_layout 的侧边栏模块 */
