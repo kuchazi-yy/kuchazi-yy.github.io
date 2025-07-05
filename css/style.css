@@ -677,9 +677,23 @@ span.site-page.group.hide i {
 
 figure.highlight pre,
 .code-block pre {
-  white-space: pre-wrap; /* 保留空格和换行，但允许文本换行 */
+  white-space: nowrap; /* 保留空格和换行，但允许文本换行 */
   text-align: left !important;
   font-size: large;
+  overflow-x: auto;       /* 启用横向滚动条 */
+}
+
+figure.highlight::-webkit-scrollbar {
+  height: 6px;            /* 滚动条高度 */
+}
+
+figure.highlight::-webkit-scrollbar-track {
+  background: transparent; /* 轨道背景透明 */
+}
+
+figure.highlight::-webkit-scrollbar-thumb {
+  background: #909399;    /* 滚动条颜色 */
+  border-radius: 3px;     /* 圆角 */
 }
 
 #article-container > * {
