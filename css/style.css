@@ -805,14 +805,3 @@ figure.highlight pre,
 
 
 
-/* 方案1：文章页全局背景（推荐） */
-/* 仅对文章页生效，不影响首页/分类页等 */
-body.post {
-  background-image: url("/img/xiaolv2bg.png") !important;
-  background-repeat: no-repeat; /* 不重复平铺 */
-  background-size: cover; /* 覆盖整个容器，可能裁剪边缘 */
-  /* 或使用 contain：完整显示图片，可能留空白 */
-  /* background-size: contain; */
-  background-attachment: fixed; /* 背景固定，滚动时不移动 */
-  background-position: center center; /* 图片居中显示 */
-}
